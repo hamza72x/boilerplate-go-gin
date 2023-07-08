@@ -18,7 +18,7 @@ go install github.com/cosmtrek/air@latest
 
 - By default `dev` is configured to `postgres` container
 - if you want to use `mysql` change `cmd/cmd.go` with mysql db connection (already there)
-- and update `dev` script to use `mysql` container (already there)
+- and update `Makefile's` `dev` script to use `mysql` container (already there)
 
 ```sh
 make dev
