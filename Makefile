@@ -45,6 +45,8 @@ stop:
 	docker stop mysql_test_app redis_test_app postgres_test_app
 
 clean_db:
+	@make stop && \
+	echo "Cleaning up database files..." && \
 	@rm -rf ./.docker/
 
 .PHONY: dev test db_mysql_dev db_postgres_dev redis_dev stop clean_db
