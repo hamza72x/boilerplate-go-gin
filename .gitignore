@@ -1,0 +1,5 @@
+dev.env
+test.db
+tmp/
+.docker/
+.DS_Store
